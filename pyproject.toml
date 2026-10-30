@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kartuli-transcribe"
+version = "0.1.0"
+description = "Georgian speech transcripts and source timestamps for editing agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sandro Khagulashvili"}]
+dependencies = ["httpx>=0.27,<1"]
+
+[project.scripts]
+kartuli-transcribe = "kartuli_transcribe.cli:main"
+
+[project.urls]
+Repository = "https://github.com/MeticulousTransformer/kartuli-transcribe"
+
+[tool.setuptools.packages.find]
+include = ["kartuli_transcribe*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

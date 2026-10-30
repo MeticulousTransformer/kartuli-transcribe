@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "provider": "elevenlabs",
+  "language": "ka",
+  "timestamp_basis": "source_seconds",
+  "audio": {
+    "start": 600,
+    "end": 602,
+    "duration": 2
+  },
+  "text": "გამარჯობა, როგორ ხარ? კარგად.",
+  "words": [
+    {
+      "id": 0,
+      "text": "გამარჯობა,",
+      "start": 600.1,
+      "end": 600.5,
+      "speaker": "speaker_0"
+    },
+    {
+      "id": 1,
+      "text": "როგორ",
+      "start": 600.6,
+      "end": 600.9,
+      "speaker": "speaker_0"
+    },
+    {
+      "id": 2,
+      "text": "ხარ?",
+      "start": 600.95,
+      "end": 601.2,
+      "speaker": "speaker_0"
+    },
+    {
+      "id": 3,
+      "text": "კარგად.",
+      "start": 601.4,
+      "end": 601.8,
+      "speaker": "speaker_1"
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "text": "გამარჯობა, როგორ ხარ?",
+      "start": 600.1,
+      "end": 601.2,
+      "speaker": "speaker_0",
+      "word_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": 1,
+      "text": "კარგად.",
+      "start": 601.4,
+      "end": 601.8,
+      "speaker": "speaker_1",
+      "word_ids": [
+        3
+      ]
+    }
+  ],
+  "warnings": [
+    "Synthetic example, not a real recording or provider result."
+  ],
+  "source": {
+    "path": "/media/example.mp4",
+    "size_bytes": 1234,
+    "mtime_ns": 1
+  },
+  "request": {
+    "start": 600,
+    "end": 602,
+    "language": "ka",
+    "model": "scribe_v2",
+    "diarize": true
+  },
+  "model": "scribe_v2",
+  "tool_version": "0.1.0"
+}
